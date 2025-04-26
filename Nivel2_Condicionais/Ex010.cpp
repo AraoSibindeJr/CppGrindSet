@@ -2,19 +2,21 @@
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-int main(){
+main(){
   int op;
   double  num1, num2;
-  cout<<endl<<"Escolha uma opcao: ";
+  cout<<endl<<"Escolha uma operacao: ";
   cout<<endl<<" 1 - Adicao: ";
   cout<<endl<<" 2 - Subtracao: ";
   cout<<endl<<" 3 - Multiplicacao: ";
   cout<<endl<<" 4 - Divisao: "; 
+  cout<<endl<<" ";
   cin>>op;
   switch (op){
   case 1:
     // Operacoes de Adicao
-    cout<<"Digite o primeiro numero: ";
+    cout<<"==> Adicao de dois Numeros <== ";
+    cout<<endl<<"Digite o primeiro numero: ";
     cin>>num1;
     cout<<"Digite o segundo numero: ";
     cin>>num2;
@@ -24,7 +26,8 @@ int main(){
     break;
   case 2:
     // // Operacoes de Subtracao
-    cout<<"Digite o primeiro numero: ";
+    cout<<"==> Subtraccao de dois Numeros <== ";
+    cout<<endl<<"Digite o primeiro numero: ";
     cin>>num1;
     cout<<"Digite o segundo numero: ";
     cin>>num2;
@@ -34,7 +37,8 @@ int main(){
     break;
   case 3:
     //  Operacoes de Multiplicacao
-    cout<<"Digite o primeiro numero: ";
+    cout<<"==> Multiplicacao de dois Numeros <== ";
+    cout<<endl<<"Digite o primeiro numero: ";
     cin>>num1;
     cout<<"Digite o segundo numero: ";
     cin>>num2;
@@ -44,7 +48,8 @@ int main(){
     break;
   case 4:
     // Operacoes de Divisao
-    cout<<"Digite o primeiro numero: ";
+    cout<<"==> Divisao de dois Numeros <== ";
+    cout<<endl<<"Digite o primeiro numero: ";
     cin>>num1;
     cout<<"Digite o segundo numero: ";
     cin>>num2;
@@ -61,5 +66,4 @@ int main(){
     cout<<" ERROR ";
     break;
   }
-  //return 0;
 }
