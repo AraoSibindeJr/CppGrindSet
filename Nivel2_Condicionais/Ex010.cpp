@@ -2,31 +2,64 @@
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-main(){
+int main(){
   int op;
   double  num1, num2;
-  cout<<"Escolha uma opcao: ";
-  cout<<" 1 - Adicao: ";
-  cout<<" 2 - Subtracao: ";
-  cout<<" 3 - Multiplicacao: ";
-  cout<<" 4 - Divisao: "; 
+  cout<<endl<<"Escolha uma opcao: ";
+  cout<<endl<<" 1 - Adicao: ";
+  cout<<endl<<" 2 - Subtracao: ";
+  cout<<endl<<" 3 - Multiplicacao: ";
+  cout<<endl<<" 4 - Divisao: "; 
   cin>>op;
-  switch (op)
-  {
+  switch (op){
   case 1:
     // Operacoes de Adicao
+    cout<<"Digite o primeiro numero: ";
+    cin>>num1;
+    cout<<"Digite o segundo numero: ";
+    cin>>num2;
+    double add;
+    add = num1 + num2;
+    cout<<" Adicao: " << num1 << " + " << num2 << " = " << add;
     break;
   case 2:
     // // Operacoes de Subtracao
+    cout<<"Digite o primeiro numero: ";
+    cin>>num1;
+    cout<<"Digite o segundo numero: ";
+    cin>>num2;
+    double sub;
+    sub = num1 - num2;
+    cout<<" Subtraccao: " << num1 << " - " << num2 << " = " << sub;
     break;
   case 3:
-    // // Operacoes de Multiplicacao
+    //  Operacoes de Multiplicacao
+    cout<<"Digite o primeiro numero: ";
+    cin>>num1;
+    cout<<"Digite o segundo numero: ";
+    cin>>num2;
+    double multi;
+    multi = num1 * num2;
+    cout<<" Multiplicacao: " << num1 << " x " << num2 << " = " << multi;
     break;
   case 4:
-    // // Operacoes de Divisao
+    // Operacoes de Divisao
+    cout<<"Digite o primeiro numero: ";
+    cin>>num1;
+    cout<<"Digite o segundo numero: ";
+    cin>>num2;
+    if(num2 == 0){
+      cout<<" MATH ERROR!";
+      exit(0); // Encerra imediatamente
+    }
+    double div;
+    div = num1 / num2;
+    cout<<" Divisao: " << num1 << " / " << num2 << " = " << div;
     break;  
-  default:
+   default:
     // Mensagem de Erro
+    cout<<" ERROR ";
     break;
   }
+  //return 0;
 }
