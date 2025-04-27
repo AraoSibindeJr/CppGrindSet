@@ -1,12 +1,10 @@
-// 1. Leia 10 números e armazene-os em um vetor.
-# include <iostream>
-# include <stdio.h>
+// 1. Imprima os números de 1 a 25.
+#include <iostream>
 using namespace std;
-main(){
-  int v [5]; 
-  cout<< sizeof(v);// Criacao do vector
-  //for (int i = 0; i < sizeof(v); i++){
-  //cout<<"Digita um numero: ";
-  // cin>>v[i];
-  // }
+
+int main() {
+    for(int i = 1; i <= 25 ; i++){
+      cout<<endl<<"Numero: " << i;
+    }
+  return 0;  
 }
