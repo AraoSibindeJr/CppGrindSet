@@ -3,10 +3,10 @@
 # include <stdio.h>
 using namespace std;
 main(){
-  int v [5]; // Criacao do vector
-  int cont = sizeof(v);
-  for (int i = 0; i < sizeof(v); i++){
-    /* code */
-    cout<<endl<<"ola";
-  }
+  int v [5]; 
+  cout<< sizeof(v);// Criacao do vector
+  //for (int i = 0; i < sizeof(v); i++){
+  //cout<<"Digita um numero: ";
+  // cin>>v[i];
+  // }
 }
