@@ -7,7 +7,7 @@ main(){
   cout<<endl<< " => SOMADOR DE 1 ATE N <=  ";
   cout<<endl<< " Insira o ultimo elemento da soma: ";
   cin>>n;
-  while (n < 0){
+  while (n < 0){ // Loop ate usuario digitar N > 0
     cout<<endl<<"ERRO";
     cout<<endl<<" Insira apenas numeros positivos!";
     cout<<endl<<" Insira o ultimo numero da soma: ";
