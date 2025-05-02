@@ -1,8 +1,4 @@
 // 5. Calcule o fatorial de um número.
-// Passo a Passo
-/*
-  1 => 
-*/
 #include<iostream>
 #include<stdio.h>
 using namespace std;
