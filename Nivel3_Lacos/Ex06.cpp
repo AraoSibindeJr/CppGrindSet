@@ -4,13 +4,14 @@
 using namespace std;
 main(){
   int n1=0, n2=1, aux=0;
-  cout<<endl<<aux;
-  cout<<endl<<n2;
-  for(int i=0; i<=10;i++){
-    n1 = n1+n2;//n1 = 1
-    n2 = n1 + aux;// n2 = 1
-    cout<<endl<<n2;
-    aux = n2;
+  cout<<"Primeiros 10 Elementos da Sequencia de Fibonacci: ";
+  cout<<endl<<" => " << aux;
+  cout<<" => " << n2;
+  for(int i=0; i<10;i++){
+    aux = n1 + n2; // armazena a soma dos elementos que se seguem
+    n1 = n2; // armazena o valor anterior na variavel n1
+    cout<<" => " << aux; // Output da soma 
+    n2 = aux; // armazena novo elemento, resultado da soma anterior
   }
 }
 
