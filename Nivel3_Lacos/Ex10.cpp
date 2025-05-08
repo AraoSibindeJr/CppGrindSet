@@ -3,7 +3,7 @@
 #include<stdio.h>
 using namespace std;
 main(){
-  double totSum, num, cont = 1;
+  double totSum = 0, num, cont = 1;
   cout<<endl<< "Somador de Numeros: ";
   cout<<endl<< "NOTA: Digita [O] para sair do loop.";
   do{
@@ -13,5 +13,9 @@ main(){
     cont++;
   } while (num != 0);
   
-  cout<<endl<<" A Soma dos Numeros: " << totSum;
+  if(totSum  == 0){
+    cout<<endl<<" A Soma dos Numeros: " << totSum;
+  }else{
+    cout<<endl<<" A Soma dos Numeros: " << totSum;
+  }
 }
