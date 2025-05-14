@@ -17,10 +17,9 @@ main(){
  }
  // Mudar a ordem dos valores (Permutacao dos Indices)
  cout<<"Valores na mudanca de ordem"<<endl;
- int t = 3;
- for(int i=1; i<=3;i++){
-  v[i] = v[t-1];
-  t--;
-  cout<< v[i]<<endl;
- }
+ for(int i =2; i>=0; i--){
+   cout<< v[i]<<endl;
+ } 
+ // Mostrar as mudancas de posicao com mais detalhes
+ 
 }
